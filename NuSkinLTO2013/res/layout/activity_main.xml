@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/dev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@layout/activity_main"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="186dp"
+        android:height="100dp"
+        android:text="Launch DEV"
+        android:width="200dp" />
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dev"
+        android:layout_alignBottom="@+id/dev"
+        android:layout_centerHorizontal="true"
+        android:height="100dp"
+        android:text="Launch Test"
+        android:width="200dp" />
+
+    <Button
+        android:id="@+id/prod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/test"
+        android:layout_alignBottom="@+id/test"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@layout/activity_main"
+        android:height="100dp"
+        android:text="Launch Production"
+        android:width="200dp" />
+
+</RelativeLayout>
